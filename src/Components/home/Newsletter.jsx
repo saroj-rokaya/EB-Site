@@ -12,8 +12,8 @@ const Newsletter = () => {
                     {/* right section */}
                     <div className='my-10 md:w-[50%] h-[100%] flex flex-col justify-center'>
                         <div className=' flex justify-center items-center gap-5'>
-                            <input placeholder='Email' className='p-1.5 md:p-3 rounded-lg outline-none border-2 border-black' type="search" name="search" id="search" />
-                            <button className='bg-black  w-[120px] md:w-[150px] rounded-lg border-2 font-bold border-black text-white p-1.5 md:p-3 hover:border-2 hover:border-black hover:text-black duration-300 hover:bg-white'>Subscribe</button>
+                            <input placeholder='Email' className='p-1.5 md:p-3 rounded-lg outline-none border-2 border-[#5AE4A8]' type="search" name="search" id="search" />
+                        <button className='bg-[#5AE4A8]  w-[120px] md:w-[150px] rounded-lg border-2 font-bold border-[#5AE4A8] text-white p-1.5 md:p-3 hover:border-2 hover:border-[#5AE4A8] hover:text-[#5AE4A8] duration-300 hover:bg-white'>Subscribe</button>
                         </div>
                         <p className='text-center'>We care about the protection of your data read our <br /> <span className='font-bold hover:underline cursor-pointer'>privacy policy</span></p>
                     </div>

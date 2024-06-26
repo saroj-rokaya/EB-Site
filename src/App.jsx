@@ -1,9 +1,15 @@
 import React from 'react'
-import AllComp from './Components/AllComp'
+import Header from './Components/Header.jsx'
+import Footer from './Components/Footer.jsx'
+import { Outlet } from 'react-router-dom'
 
 const App = () => {
   return (
-    <AllComp/>
+    <>
+    <Header/>
+    <Outlet/>
+    <Footer/>
+    </>
   )
 }
 

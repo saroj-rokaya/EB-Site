@@ -1,13 +1,15 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  
 
   return (
     <nav className="max-w-[1240px] mx-auto h-[10vh] flex justify-between items-center">
-      <div className="font-extrabold text-2xl md:text-3xl">Rokaya Ji</div>
+      <Link to="/">
+        <div className="font-bold text-2xl md:text-3xl">ER-Skills</div>
+      </Link>
       {toggle ? (
         <AiOutlineClose
           onClick={() => setToggle(!toggle)}
@@ -21,10 +23,46 @@ const Header = () => {
       )}
 
       <ul className="hidden md:flex gap-10">
-        <li className="hover:underline cursor-pointer ">Home</li>
-        <li className="hover:underline cursor-pointer ">About</li>
-        <li className="hover:underline cursor-pointer ">Courses</li>
-        <li className="hover:underline cursor-pointer ">Contact</li>
+        <li>
+          <NavLink
+            to="/"
+            className={({ isActive }) => `
+            ${isActive ? "text-[#5AE4A8]" : "text-black"}
+            "cursor-pointer"`}
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => `
+            ${isActive ? "text-[#5AE4A8]" : "text-black"}
+            cursor-pointer`}
+          >
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/courses"
+            className={({ isActive }) => `
+            ${isActive ? "text-[#5AE4A8]" : "text-black"}
+            cursor-pointer`}
+          >
+            Courses
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => `
+            ${isActive ? "text-[#5AE4A8]" : "text-black"}
+            cursor-pointer`}
+          >
+            Contact
+          </NavLink>
+        </li>
       </ul>
       {/* //responsive menu */}
       <ul
@@ -38,6 +76,7 @@ const Header = () => {
         <li className="hover:bg-gray-100 hover:text-black active:bg-gray-100 p-3 cursor-pointer rounded">
           About
         </li>
+
         <li className="hover:bg-gray-100 hover:text-black active:bg-gray-100 p-3 cursor-pointer rounded">
           Blog
         </li>
