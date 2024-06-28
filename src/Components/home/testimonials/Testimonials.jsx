@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../../assets/testimonials/insteadOfPhoto.png";
+import image from "../../../Assets/testimonials/insteadOfPhoto.png";
 import Userfeed from "./Userfeed.jsx";
 const Testimonials = () => {
   return (

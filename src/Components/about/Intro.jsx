@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../assets/image.png";
+import image from "../../Assets/image.png";
 
 const Intro = () => {
   return (

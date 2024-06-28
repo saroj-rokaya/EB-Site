@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card.jsx";
-import image from "../../assets/image.png";
+import image from "../../Assets/image.png";
 import Chart from "./Chart.jsx";
 import PriceFinance from "./PriceFinance.jsx";
 import "tailwindcss/tailwind.css";

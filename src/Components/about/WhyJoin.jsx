@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../assets/confuse.jpg";
+import image from "../../Assets/confuse.jpg";
 
 const WhyJoin = () => {
   return (
