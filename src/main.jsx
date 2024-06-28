@@ -5,8 +5,8 @@ import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Home from './Components/home/Home.jsx'
 import About from './Components/about/About.jsx'
-import Contact from './Components/contact/Contact.jsx'
-import Courses from './Components/courses/Courses.jsx'
+import Contact from './Components/contact/Contact'
+import Courses from './Components/courses/Courses'
 
 const router=createBrowserRouter(
   createRoutesFromElements(

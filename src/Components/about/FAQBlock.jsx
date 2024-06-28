@@ -8,10 +8,7 @@ const FAQBlock = () => {
         <h1 className="text-2xl font-bold">Frequently Asked Questions</h1>
         <FAQs />
         <FAQs />
-        <FAQs />
-        <FAQs />
-        <FAQs />
-        <FAQs />
+        <FAQs />       
         
       </div>
     </>

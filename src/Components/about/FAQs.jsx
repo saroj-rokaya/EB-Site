@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
 
 const FAQs = () => {
-  const[answer,setAnswer]=useState("hidden")
+  const[answer,setAnswer]=useState(false)
   const faqs = [
     {
       id: 1,
@@ -44,19 +44,21 @@ const FAQs = () => {
 
   return (
     <>
-      <div className=" w-full flex justify-center items-center flex-col">
+    {faqs.map((faq)=>{
+      return(
+      <div className=" w-full flex justify-center items-center flex-col key={faq.id}">
         <div className="w-full p-2 flex ">
-          <button
-            onClick={()=>setAnswer(!answer)}
-            className={` mx-2 w-6 h-6 flex justify-center items-center rounded-full`}>
-            <IoMdArrowDropdownCircle />
-          </button>
-          {faqs.map((faq)=>faq.question)}
+            <IoMdArrowDropdownCircle            
+              onClick={()=>setAnswer(!answer)}
+            />
+          {faq.question}
         </div>
-        <div className={`${answer?"block":"hidden"}answer w-full p-2 ml-20 border-l border-black shadow-sm rounded-b-lg`}>
-        {faqs.map((faq)=>faq.answer)}
+        <div className={`${answer?"hidden":"block"}  answer w-full p-2 ml-20 border-l border-black shadow-sm rounded-b-lg`}>
+        {faq.answer}
         </div>
       </div>
+      )
+    })}
     </>
   );
 };

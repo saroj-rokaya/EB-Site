@@ -8,25 +8,30 @@ import "tailwindcss/tailwind.css";
 const Cardcollection = () => {
   return (
     <>
-      <div className="bg-gray-100 max-w-[1240px] md:min-h-[50vh]  mx-auto md:flex flex-wrap p-2 gap-5 justify-between items-center">
+      <div className=" max-w-[1240px] md:min-h-[50vh]  mx-auto md:flex flex-wrap p-2 justify-between items-center">
         <Chart />
-        <PriceFinance/>
-        
+        <PriceFinance />
       </div>
-      
-        <div className="max-w-[1240px] mx-auto flex justify-between item-center p-2 my-10 ">
-          <p className="text-2xl font-bold" >All Courses</p>
-          <div>
-            <select className="border-2 rounded">
-              <option className=" bg-red-500" value="Running">Running</option>
-              <option className=" bg-green-500" value="Completed">Completed</option>
-              <option className=" bg-gray-300" value="Upcoming">Upcoming</option>
-            </select>
-          </div>
-        </div>
 
-        {/* card section */}
-      <div className=" p-2 flex gap-10 flex-wrap justify-center items-center">
+      <div className="max-w-[1240px] mx-auto flex justify-between item-center p-2 my-10 ">
+        <p className="text-2xl font-bold">All Courses</p>
+        <div>
+          <select className="border-2 rounded">
+            <option className=" bg-red-500" value="Running">
+              Running
+            </option>
+            <option className=" bg-green-500" value="Completed">
+              Completed
+            </option>
+            <option className=" bg-gray-300" value="Upcoming">
+              Upcoming
+            </option>
+          </select>
+        </div>
+      </div>
+
+      {/* card section */}
+      <div className=" max-w-[1240px] mx-auto p-2 flex gap-10 flex-wrap justify-center items-center">
         <Card
           image={image}
           courseName={"Web Development Course"}

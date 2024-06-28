@@ -4,7 +4,11 @@ import Userfeed from "./Userfeed.jsx";
 const Testimonials = () => {
   return (
     <>
-      <div className="sm:flex justify-center p-2 items-center max-w-[1240px] mx-auto flex-wrap gap-5">
+    <div className="min-h-[20vh] max-w-[1240px] mx-auto flex flex-col gap-2 bg-gray-100 justify-center items-center">
+      <p className="text-2xl font-bold">Testimonials</p>
+      <p> Subscribe easy tutorials and all time support</p>
+    </div>
+      <div className="sm:flex justify-center bg-gray-100 p-2 items-center max-w-[1240px] mx-auto flex-wrap gap-5">
         <Userfeed
           image={image}
           userName="Paras Dhami"

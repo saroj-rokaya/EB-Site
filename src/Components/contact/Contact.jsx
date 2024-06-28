@@ -58,8 +58,7 @@ const Contact = () => {
             </label>
             <div>
               <input
-                type="tel"
-                defaultValue={+977}                
+                type="tel"               
                 className="rounded-md p-2 outline-none md:w-[280px] w-[100%]"
               />
             </div>
