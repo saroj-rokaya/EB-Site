@@ -7,7 +7,7 @@ const Newsletter = () => {
                 <div className=" max-w-[1240px] mx-auto  md:flex justify-between items-center">
                     <div className='my-10 md:w-[50%] h-[100%] flex flex-col justify-center items-center'>
                         <h1 className='font-bold md:text-3xl text-2xl text-center'>Want to learn latest IT skills?</h1>
-                        <p>Signup to our newsletter and up to date.</p>
+                        <p>SignUp to our newsletter and up to date.</p>
                     </div>
                     {/* right section */}
                     <div className='my-10 md:w-[50%] h-[100%] flex flex-col justify-center'>

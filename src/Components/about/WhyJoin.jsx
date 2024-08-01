@@ -8,7 +8,7 @@ const WhyJoin = () => {
         <div className="md:w-[50%]">
           <img src={image} alt="img" className="  p-2 max-h-[90vh]" />
         </div>
-        <div className="flex gap-5   p-2 flex-col justify-center items-center md:w-[50%]">
+        <div className="flex gap-5 p-2 flex-col justify-center sm:items-start items-center md:w-[50%]">
           <h1 className="text-2xl font-bold">Why Connect With US</h1>
           <ul className="flex flex-col gap-2">
             <li className="list-disc">

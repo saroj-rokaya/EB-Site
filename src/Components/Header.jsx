@@ -6,7 +6,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="max-w-[1240px] mx-auto h-[10vh] flex justify-between items-center">
+    <nav className="max-w-[1240px] mx-auto h-[10vh] p-2 flex justify-between items-center">
       <Link to="/">
         <div className="font-bold text-2xl md:text-3xl">ER-Skills</div>
       </Link>
