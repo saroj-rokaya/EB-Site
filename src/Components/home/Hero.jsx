@@ -18,7 +18,7 @@ const Hero = () => {
         ></ReactTyped>
       </p>
       <Link to="/courses">
-<button className="bg-[#5AE4A8] rounded-lg border-2 font-bold border-[#5AE4A8] text-white p-1.5 md:p-3 hover:border-2 hover:border-[#5AE4A8] hover:text-[#5AE4A8] duration-300 hover:bg-white">
+        <button className="bg-[#5AE4A8] rounded-lg border-2 font-bold border-[#5AE4A8] text-white p-1.5 md:p-3 hover:border-2 hover:border-[#5AE4A8] hover:text-[#5AE4A8] duration-300 hover:bg-white">
           Get Started
         </button>
       </Link>

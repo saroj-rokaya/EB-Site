@@ -1,18 +1,33 @@
 import React from "react";
 import image from "../../Assets/image.png/";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Learn = () => {
   return (
     <div className="max-w-[1240px] p-2 mx-auto min-h-[30vh] md:grid grid-cols-3 gap-5">
-      <div>
+      <motion.div
+        whileInView={{ scale: 1.1 }}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.7,
+          ease: "easeInOut",
+          scale: {
+            type: "spring",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        }}
+      >
         <img
           className=" rounded-lg h-full md:w-[80%] p-2 mt-5"
           src={image}
           loading="lazy"
           alt="img"
         />
-      </div>
+      </motion.div>
       {/* //right side */}
       <div className=" col-span-2 flex flex-col gap-5 justify-center mt-5">
         <p className="font-bold text-2xl text-black">

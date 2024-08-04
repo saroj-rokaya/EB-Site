@@ -9,23 +9,33 @@ const Footer = () => {
       <div className="m-2 bg-gray-100 md:flex justify-between gap-5">
         {/* left section */}
         <div className="md:w-[50%] my-5 flex flex-col gap-5">
-          <h1 className="font-bold text-2xl">ER-Skills</h1>
+          <h1 className="font-bold text-2xl">
+            <span className="bg-[#5AE4A8] border-2 rounded-l-lg border-[#5AE4A8]">
+              ER
+            </span>
+            <span className="border-t-[#5AE4A8] border-l-[#5AE4A8] border-r-black border-b-black border-2">
+              -
+            </span>
+            <span className="bg-black text-[#5AE4A8] border-2 border-black rounded-r-lg">
+              Skills
+            </span>
+          </h1>
           <p>
             Start your journey towards becoming a tech expert with us. Enroll in
             our courses today and take the first step towards a brighter future
             in technology
           </p>
           <ul className="flex justify-center items-center rounded-full gap-10">
-            <li className="hover:text-white hover:bg-black hover:scale-105 rounded-full p-2">
+            <li className="hover:text-black text-[#5AE4A8] hover:bg-[#5AE4A8] bg-black ease-in-out duration-300 hover:scale-105 rounded-full p-2">
               <FaFacebook className="h-6 w-6 md:h-8 md:w-8" />
             </li>
-            <li className="hover:text-white hover:bg-black hover:scale-105 rounded-full p-2">
+            <li className="hover:text-black text-[#5AE4A8] hover:bg-[#5AE4A8] bg-black ease-in-out duration-300 hover:scale-105 rounded-full p-2">
               <AiFillInstagram className="h-6 w-6 md:h-8 md:w-8" />
             </li>
-            <li className="hover:text-white hover:bg-black hover:scale-105 rounded-full p-2">
+            <li className="hover:text-black text-[#5AE4A8] hover:bg-[#5AE4A8] bg-black ease-in-out duration-300 hover:scale-105 rounded-full p-2">
               <FaGithub className="h-6 w-6 md:h-8 md:w-8" />
             </li>
-            <li className="hover:text-white hover:bg-black hover:scale-105 rounded-full p-2">
+            <li className="hover:text-black text-[#5AE4A8] hover:bg-[#5AE4A8] bg-black ease-in-out duration-300 hover:scale-105 rounded-full p-2">
               <FaLinkedin className="h-6 w-6 md:h-8 md:w-8" />
             </li>
           </ul>
@@ -38,7 +48,10 @@ const Footer = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) => `
-                ${isActive ? "text-[#5ae4a8]" : "text-black"} cursor-pointer hover:underline`}>
+                ${
+                  isActive ? "text-[#5ae4a8]" : "text-black"
+                } cursor-pointer hover:underline`}
+              >
                 Home
               </NavLink>
             </li>
@@ -46,7 +59,10 @@ const Footer = () => {
               <NavLink
                 to="/about"
                 className={({ isActive }) => `
-                ${isActive ? "text-[#5ae4a8]" : "text-black"} cursor-pointer hover:underline`}>
+                ${
+                  isActive ? "text-[#5ae4a8]" : "text-black"
+                } cursor-pointer hover:underline`}
+              >
                 About
               </NavLink>
             </li>
@@ -54,7 +70,10 @@ const Footer = () => {
               <NavLink
                 to="/courses"
                 className={({ isActive }) => `
-                ${isActive ? "text-[#5ae4a8]" : "text-black"} cursor-pointer hover:underline`}>
+                ${
+                  isActive ? "text-[#5ae4a8]" : "text-black"
+                } cursor-pointer hover:underline`}
+              >
                 Courses
               </NavLink>
             </li>
@@ -62,7 +81,10 @@ const Footer = () => {
               <NavLink
                 to="/contact"
                 className={({ isActive }) => `
-                ${isActive ? "text-[#5ae4a8]" : "text-black"} cursor-pointer hover:underline`}>
+                ${
+                  isActive ? "text-[#5ae4a8]" : "text-black"
+                } cursor-pointer hover:underline`}
+              >
                 Contact
               </NavLink>
             </li>

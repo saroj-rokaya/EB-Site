@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <nav className="max-w-[1240px] mx-auto h-[10vh] p-2 flex justify-between items-center">
       <Link to="/">
-        <div className="font-bold text-2xl md:text-3xl">ER-Skills</div>
+        <div className="font-bold text-2xl md:text-3xl "><span className="bg-[#5AE4A8] border-2 rounded-l-lg border-[#5AE4A8]">ER</span><span className="border-t-[#5AE4A8] border-l-[#5AE4A8] border-r-black border-b-black border-2">-</span><span className="bg-black text-[#5AE4A8] border-2 border-black rounded-r-lg">Skills</span></div>
       </Link>
       {toggle ? (
         <AiOutlineClose
@@ -64,6 +64,9 @@ const Header = () => {
           </NavLink>
         </li>
       </ul>
+
+      
+
       {/* //responsive menu */}
       <ul
         className={`md:hidden fixed bg-black text-white flex flex-col gap-5 top-[10vh] 
