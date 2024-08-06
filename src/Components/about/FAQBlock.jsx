@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import FAQs from "./FAQs.jsx";
 
 const FAQBlock = () => {
@@ -39,13 +39,15 @@ const FAQBlock = () => {
       answer:
         "Yes, we offer a 30-day money-back guarantee if you are not satisfied with your course.",
     },
-  ]
+  ];
   return (
     <>
       <div className="max-w-[1240px] mx-auto min-h-[50%] px-2">
-        <h1 className="text-2xl font-bold mb-5 text-center">Frequently Asked Questions</h1>
+        <h1 className="text-2xl font-bold mb-5 text-center">
+          Frequently Asked Questions
+        </h1>
         {questionsAns.map((items, index) => (
-          <FAQs key={index} question={items.question} answer={items.answer}/>
+          <FAQs key={index} question={items.question} answer={items.answer} />
         ))}
       </div>
     </>

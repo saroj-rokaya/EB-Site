@@ -1,25 +1,24 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import image from "../Assets/Logo/transparentLogo.png";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="m-2 bg-gray-100 md:flex justify-between gap-5">
+    <>
+      <div className="mx-2 py-2 bg-gray-100 md:flex justify-between gap-5">
         {/* left section */}
         <div className="md:w-[50%] my-5 flex flex-col gap-5">
-          <h1 className="font-bold text-2xl">
-            <span className="bg-[#5AE4A8] border-2 rounded-l-lg border-[#5AE4A8]">
-              ER
-            </span>
-            <span className="border-t-[#5AE4A8] border-l-[#5AE4A8] border-r-black border-b-black border-2">
-              -
-            </span>
-            <span className="bg-black text-[#5AE4A8] border-2 border-black rounded-r-lg">
-              Skills
-            </span>
-          </h1>
+          <Link to="/">
+            <div className="font-bold text-2xl md:text-3xl ">
+              <img
+                src={image}
+                alt="img"
+                className="h-[40%] w-[40%] object-cover"
+              />
+            </div>
+          </Link>
           <p>
             Start your journey towards becoming a tech expert with us. Enroll in
             our courses today and take the first step towards a brighter future
@@ -108,7 +107,7 @@ const Footer = () => {
       <div className="max-w-[1240px] mx-auto py-5 m-2 border-t border-black text-center">
         &copy;2024 || Saroj rokaya ||
       </div>
-    </div>
+    </>
   );
 };
 

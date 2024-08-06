@@ -16,7 +16,7 @@ const FAQs = ({ question, answer }) => {
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-          className={`flex items-center justify-between w-full px-[2%] py-5 border border-b-0  rounded-t-xl  gap-3 focus:text-[#5AE4A8]`}
+          className={`flex items-center jus tify-between w-full px-[2%] py-5 border border-b-0  rounded-t-xl  gap-3 focus:text-[#5AE4A8]`}
         >
           <span className="flex items-center">
             <BsQuestionCircleFill className="mr-2" />

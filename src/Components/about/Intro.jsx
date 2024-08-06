@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import image from "../../Assets/image.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Intro = () => {
+useState(()=>{
+  AOS.init({
+    duration: 1000,
+  });
+ }, []);
   return (
     <div className="md:flex max-w-[1240px] mx-auto justify-center items-center gap-10 p-2">
-      <div className="flex gap-5 flex-col justify-center sm:items-start items-center md:w-[50%] text-justify">
+      <div data-aos="fade-right" className="flex gap-5 flex-col justify-center sm:items-start items-center md:w-[50%] text-justify">
         <h1 className="font-bold text-2xl">About Our Business</h1>
         <p>
           We are IT professionals dedicated to providing high quality courses
@@ -13,7 +20,7 @@ const Intro = () => {
           range IT courses business where we can teach and grow our connections
         </p>
       </div>
-      <div className="flex justify-center items-center">
+      <div data-aos="fade-left" className="flex justify-center items-center">
         <img src={image} loading="lazy" alt="img" />
       </div>
     </div>

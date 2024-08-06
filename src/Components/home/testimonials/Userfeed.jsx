@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
-const Userfeed = ({ image, message, course, userName }) => {
+const Userfeed = ({ image, message, course, userName, }) => {
+  useState(()=>{
+    AOS.init({
+      duration: 1000,
+    });
+  },[])
   return (
     <>
       {/* <div className="shadow-md  grid grid-cols-3 justify-center p-2 rounded-lg my-5 md:max-h-[30%] md:max-w-[45%]">
@@ -16,7 +23,7 @@ const Userfeed = ({ image, message, course, userName }) => {
           {message}
         </div>
       </div> */}
-      <div className="flex flex-col justify-between sm:h-[80vh] max-w-sm m-2 shadow-lg ring-1 ring-green-200 bg-white rounded-xl">
+      <div  data-aos="zoom-in-up" className="flex flex-col justify-between sm:h-[80vh] max-w-sm m-2 shadow-lg ring-1 ring-green-200 bg-white rounded-xl">
         <div className="px-2 pb-12 rounded-t-lg sm:px-8 md:px-12 bg-white">
           <p className="relative pt-2  italic text-justify">
             <svg

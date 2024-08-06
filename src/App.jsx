@@ -4,13 +4,11 @@ import Footer from "./Components/Footer.jsx";
 import { Outlet, useLocation } from "react-router-dom";
 
 const App = () => {
-  const location = useLocation();
-  const isErrorPage = location.pathname === '*';
   return (
     <>
-      {!isErrorPage && <Header />}
+      <Header />
       <Outlet />
-      {!isErrorPage && <Footer />}
+      <Footer />
     </>
   );
 };

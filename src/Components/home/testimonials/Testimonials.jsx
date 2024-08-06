@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import image from "../../../Assets/testimonials/insteadOfPhoto.png";
 import Userfeed from "./Userfeed.jsx";
+
 const Testimonials = () => {
   return (
     <>
