@@ -5,11 +5,11 @@ import Userfeed from "./Userfeed.jsx";
 const Testimonials = () => {
   return (
     <>
-      <div className="min-h-[20vh] max-w-[1240px] mx-auto flex flex-col gap-2 bg-gray-100 justify-center items-center">
+      <div className="min-h-[20vh] max-w-[90%] mx-auto flex flex-col gap-2 light-back dark-text rounded-xl mb-10 justify-center items-center">
         <p className="text-2xl font-bold">Testimonials</p>
         <p> Subscribe easy tutorials and all time support</p>
       </div>
-      <section className="max-w-[1240px] mx-auto bg-gray-100 ">
+      <section className="max-w-[1240px] mx-auto ">
         <div className=" flex flex-col items-center pb-12 justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-cemter ">
           <Userfeed
             image={image}

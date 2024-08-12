@@ -3,7 +3,7 @@ import React from "react";
 const PriceFinance = () => {
   return (
     <>
-      <div className="flex justify-center bg-gray-100 flex-col gap-5 border w-full md:w-[48%] p-2 rounded-lg min-h-[36vh] ">
+      <div className="flex justify-center light-back flex-col gap-5 border w-full md:w-[48%] p-2 rounded-lg max-h-64 min-h-64">
         <h1 className="text-2xl font-bold">Course Finance</h1>
         <div className="flex flex-col gap-2">
           <div className="flex justify-between items-center">

@@ -15,9 +15,9 @@ const Chart = () => {
   const COLORS = ["#FF0000", "#00C49F", "#d9dde0"];
   return (
     <>
-      <div className="sm:flex justify-between bg-gray-100  p-2 my-4 items-center w-full md:w-[48%] border rounded-lg shadow-sm">
+      <div className="sm:flex justify-between light-back p-2 my-4 items-center w-full md:w-[48%] border rounded-lg shadow-sm">
         <div >
-          <ResponsiveContainer width="100%" height={200}>
+          <ResponsiveContainer width="100%" height={250}>
             <PieChart>
               <Pie
                 data={data}
@@ -49,7 +49,7 @@ const Chart = () => {
               Completed
             </p>
             <p>
-              <span className="font-bold text-2xl text-gray-300">- </span>
+              <span className="font-bold text-2xl text-white">- </span>
               Upcoming
             </p>
           </div>

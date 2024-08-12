@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Learn = () => {
   return (
-    <div className="max-w-[1240px] p-2 mx-auto min-h-[30vh] md:grid grid-cols-3 gap-5">
+    <div className="max-w-[90%] p-2 mx-auto min-h-[30vh] md:grid grid-cols-3 gap-5">
       <motion.div
         whileInView={{ scale: 1.1 }}
         initial={{ opacity: 0, scale: 0.8 }}
@@ -39,7 +39,7 @@ const Learn = () => {
           need to stay ahead. Sign up now and stay in the loop!
         </p>
         <Link to="/Courses">
-          <button className="bg-[#5AE4A8]  w-[120px] md:w-[150px] rounded-lg border-2 font-bold border-[#5AE4A8] text-white p-1.5 md:p-3 hover:border-2 hover:border-[#5AE4A8] hover:text-[#5AE4A8] duration-300 hover:bg-white">
+          <button className="normal-back text-white  w-[120px] md:w-[150px] rounded-lg shadow-lg font-bold dark-text p-1.5 md:p-3 hover:dark-text duration-300">
             Get Started
           </button>
         </Link>

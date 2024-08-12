@@ -4,7 +4,7 @@ const Newsletter = () => {
   return (
     <>
       <div>
-        <div className=" max-w-[1240px] mx-auto  md:flex justify-between items-center">
+        <div className=" max-w-[90%] mx-auto  md:flex justify-between items-center">
           <div className="my-10 md:w-[50%] h-[100%] flex flex-col justify-center items-center">
             <h1 className="font-bold md:text-3xl text-2xl text-center">
               Want to learn latest IT skills?
@@ -17,12 +17,12 @@ const Newsletter = () => {
             <div className=" flex justify-center items-center">
               <input
                 placeholder="example@gmail.com"
-                className="p-1.5 md:p-3 rounded-l-lg outline-none min-w-[25%] md:w-[40%] border-2 border-[#5AE4A8]"
+                className="p-1.5 md:p-3 rounded-l-lg outline-none min-w-[25%] md:w-[40%] border-2 border-[#4CA771]"
                 type="search"
                 name="search"
                 id="search"
               />
-              <button className="bg-[#5AE4A8] min:w-[18%] md:w-[25%] rounded-r-lg border-2 font-bold border-[#5AE4A8] text-white p-1.5 md:p-3 hover:border-2 hover:border-[#5AE4A8] hover:text-[#5AE4A8] duration-300 hover:bg-white">
+              <button className="normal-back min:w-[18%] md:w-[25%] rounded-r-lg border-2 font-bold border-[#4CA771] text-white p-1.5 md:p-3 hover:border-2 hover:border-[#4CA771] hover:dark-text duration-300 ">
                 Subscribe
               </button>
             </div>

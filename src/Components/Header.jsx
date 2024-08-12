@@ -7,7 +7,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="max-w-[1240px] mx-auto h-[10vh] p-2 flex justify-between items-center">
+    <nav className="sticky top-0 light-back z-[99] px-10 mx-auto h-[10vh] p-2 flex justify-between items-center">
       <Link to="/">
         <div className=" font-bold text-2xl md:text-3xl ">
           <img src={image} alt="img" className="w-[50%] h-[50%] object-cover"/>
@@ -25,12 +25,12 @@ const Header = () => {
         />
       )}
 
-      <ul className="hidden md:flex gap-10">
+      <ul className="hidden font-semibold md:flex gap-10">
         <li>
           <NavLink
             to="/"
             className={({ isActive }) => `
-            ${isActive ? "text-[#5AE4A8]" : "text-black"}
+            ${isActive ? "normal-text" : "dark-text"}
             "cursor-pointer"`}
           >
             Home
@@ -40,7 +40,7 @@ const Header = () => {
           <NavLink
             to="/about"
             className={({ isActive }) => `
-            ${isActive ? "text-[#5AE4A8]" : "text-black"}
+            ${isActive ? "normal-text" : "dark-text"}
             cursor-pointer`}
           >
             About
@@ -50,7 +50,7 @@ const Header = () => {
           <NavLink
             to="/courses"
             className={({ isActive }) => `
-            ${isActive ? "text-[#5AE4A8]" : "text-black"}
+            ${isActive ? "normal-text" : "dark-text"}
             cursor-pointer`}
           >
             Courses
@@ -60,7 +60,7 @@ const Header = () => {
           <NavLink
             to="/contact"
             className={({ isActive }) => `
-            ${isActive ? "text-[#5AE4A8]" : "text-black"}
+            ${isActive ? "normal-text" : "dark-text"}
             cursor-pointer`}
           >
             Contact
@@ -70,14 +70,14 @@ const Header = () => {
 
       {/* //responsive menu */}
       <ul
-        className={`md:hidden fixed bg-black text-white flex flex-col gap-5 top-[10vh] 
+        className={`md:hidden fixed light-back backdrop-blur-3xl text-white flex flex-col gap-5  top-[10vh] 
             ${toggle ? "left-[0]" : "left-[-100%]"}
-             h-screen opacity-90 z-[1] w-full duration-500`}
+             h-screen opacity-90 z-20 w-full duration-500`}
       >
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `${isActive ? "text-[#5AE4A8]" : "text-white"}`
+            `${isActive ? "normal-text" : "dark-text"}`
           }
         >
           <li className="hover:bg-gray-100 hover:text-black active:bg-gray-100 p-3 cursor-pointer rounded">
@@ -87,7 +87,7 @@ const Header = () => {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            `${isActive ? "text-[#5AE4A8]" : "text-white"}`
+            `${isActive ? "normal-text" : "dark-text"}`
           }
         >
           <li className="hover:bg-gray-100 hover:text-black active:bg-gray-100 p-3 cursor-pointer rounded">
@@ -98,7 +98,7 @@ const Header = () => {
         <NavLink
           to="/courses"
           className={({ isActive }) =>
-            `${isActive ? "text-[#5AE4A8]" : "text-white"}`
+            `${isActive ? "normal-text" : "dark-text"}`
           }
         >
           <li className="hover:bg-gray-100 hover:text-black active:bg-gray-100 p-3 cursor-pointer rounded">
@@ -108,7 +108,7 @@ const Header = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            `${isActive ? "text-[#5AE4A8]" : "text-white"}`
+            `${isActive ? "normal-text" : "dark-text"}`
           }
         >
           <li className="hover:bg-gray-100 hover:text-black active:bg-gray-100 p-3 cursor-pointer rounded">

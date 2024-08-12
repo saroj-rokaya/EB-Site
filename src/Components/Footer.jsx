@@ -7,7 +7,7 @@ import image from "../Assets/Logo/transparentLogo.png";
 const Footer = () => {
   return (
     <>
-      <div className="mx-2 py-2 bg-gray-100 md:flex justify-between gap-5">
+      <div className="px-5 py-5 md:flex justify-between gap-5 light-back">
         {/* left section */}
         <div className="md:w-[50%] my-5 flex flex-col gap-5">
           <Link to="/">
@@ -19,22 +19,22 @@ const Footer = () => {
               />
             </div>
           </Link>
-          <p>
+          <p className="normal-text">
             Start your journey towards becoming a tech expert with us. Enroll in
             our courses today and take the first step towards a brighter future
             in technology
           </p>
           <ul className="flex justify-center items-center rounded-full gap-10">
-            <li className="hover:text-black text-[#5AE4A8] hover:bg-[#5AE4A8] bg-black ease-in-out duration-300 hover:scale-105 rounded-full p-2">
+            <li className="hover:scale-[1.2] ease-in-out duration-300 dark-text">
               <FaFacebook className="h-6 w-6 md:h-8 md:w-8" />
             </li>
-            <li className="hover:text-black text-[#5AE4A8] hover:bg-[#5AE4A8] bg-black ease-in-out duration-300 hover:scale-105 rounded-full p-2">
+            <li className="hover:scale-[1.2] ease-in-out duration-300 dark-text">
               <AiFillInstagram className="h-6 w-6 md:h-8 md:w-8" />
             </li>
-            <li className="hover:text-black text-[#5AE4A8] hover:bg-[#5AE4A8] bg-black ease-in-out duration-300 hover:scale-105 rounded-full p-2">
+            <li className="hover:scale-[1.2] ease-in-out duration-300 dark-text">
               <FaGithub className="h-6 w-6 md:h-8 md:w-8" />
             </li>
-            <li className="hover:text-black text-[#5AE4A8] hover:bg-[#5AE4A8] bg-black ease-in-out duration-300 hover:scale-105 rounded-full p-2">
+            <li className="hover:scale-[1.2] ease-in-out duration-300 dark-text">
               <FaLinkedin className="h-6 w-6 md:h-8 md:w-8" />
             </li>
           </ul>
@@ -42,13 +42,13 @@ const Footer = () => {
         {/* //right section/ */}
         <div className=" md:w-[50%] m-2 flex justify-between">
           <ul className="flex flex-col gap-5">
-            <li className="font-bold text-lg">Short Link</li>
+            <li className="font-bold text-lg dark-text">Short Link</li>
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) => `
                 ${
-                  isActive ? "text-[#5ae4a8]" : "text-black"
+                  isActive ? "normal-text font-semibold" : "dark-text font-semibold"
                 } cursor-pointer hover:underline`}
               >
                 Home
@@ -59,7 +59,7 @@ const Footer = () => {
                 to="/about"
                 className={({ isActive }) => `
                 ${
-                  isActive ? "text-[#5ae4a8]" : "text-black"
+                  isActive ? "normal-text font-semibold" : "dark-text font-semibold"
                 } cursor-pointer hover:underline`}
               >
                 About
@@ -70,7 +70,7 @@ const Footer = () => {
                 to="/courses"
                 className={({ isActive }) => `
                 ${
-                  isActive ? "text-[#5ae4a8]" : "text-black"
+                  isActive ? "normal-text font-semibold" : "dark-text font-semibold"
                 } cursor-pointer hover:underline`}
               >
                 Courses
@@ -81,7 +81,7 @@ const Footer = () => {
                 to="/contact"
                 className={({ isActive }) => `
                 ${
-                  isActive ? "text-[#5ae4a8]" : "text-black"
+                  isActive ? "normal-text font-semibold" : "dark-text font-semibold"
                 } cursor-pointer hover:underline`}
               >
                 Contact
@@ -89,22 +89,22 @@ const Footer = () => {
             </li>
           </ul>
           <ul className="flex flex-col gap-5">
-            <li className="font-bold text-lg">Support</li>
-            <li className="cursor-pointer hover:underline">Pricing</li>
-            <li className="cursor-pointer hover:underline">Documentation</li>
-            <li className="cursor-pointer hover:underline">Guide</li>
-            <li className="cursor-pointer hover:underline">Api Status</li>
+            <li className="font-bold text-lg dark-text">Support</li>
+            <li className="cursor-pointer hover:underline dark-text font-semibold">Pricing</li>
+            <li className="cursor-pointer hover:underline dark-text font-semibold">Documentation</li>
+            <li className="cursor-pointer hover:underline dark-text font-semibold">Guide</li>
+            <li className="cursor-pointer hover:underline dark-text font-semibold">Api Status</li>
           </ul>
           <ul className="flex flex-col gap-5">
-            <li className="font-bold text-lg">Company</li>
-            <li className="cursor-pointer hover:underline">About</li>
-            <li className="cursor-pointer hover:underline">Blog</li>
-            <li className="cursor-pointer hover:underline">Job</li>
-            <li className="cursor-pointer hover:underline">Careers</li>
+            <li className="font-bold text-lg dark-text">Company</li>
+            <li className="cursor-pointer hover:underline dark-text font-semibold">About</li>
+            <li className="cursor-pointer hover:underline dark-text font-semibold">Blog</li>
+            <li className="cursor-pointer hover:underline dark-text font-semibold">Job</li>
+            <li className="cursor-pointer hover:underline dark-text font-semibold">Careers</li>
           </ul>
         </div>
       </div>
-      <div className="max-w-[1240px] mx-auto py-5 m-2 border-t border-black text-center">
+      <div className="mx-auto py-5 border-t border-black text-center light-back">
         &copy;2024 || Saroj rokaya ||
       </div>
     </>
