@@ -42,8 +42,8 @@ const FAQBlock = () => {
   ];
   return (
     <>
-      <div className="max-w-[1240px] mx-auto min-h-[50%] px-2">
-        <h1 className="text-2xl font-bold mb-5 text-center">
+      <div className="max-w-[1240px] mx-auto min-h-[50%] my-10 px-2">
+        <h1 className="text-2xl font-bold mb-5 text-center dark-text">
           Frequently Asked Questions
         </h1>
         {questionsAns.map((items, index) => (

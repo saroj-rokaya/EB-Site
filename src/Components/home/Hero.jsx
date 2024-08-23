@@ -9,7 +9,7 @@ import image from '../../Assets/Hero/coding.svg'
 
 const Hero = () => {
   return (
-    <div className="mx-auto bg-[#C0E6BA]">
+    <div className="mx-auto light-back">
       <div className="w-[90%] mx-auto flex justify-center items-start gap-5 flex-col min-h-[90vh]">
         <h1 className="text-2xl md:text-4xl font-bold dark-text ">Welcome to ER Skills</h1>
         <p className="text-xl font-semibold md:text-2xl dark-text">

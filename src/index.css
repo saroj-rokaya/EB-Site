@@ -9,22 +9,25 @@
 }
 @layer components{
     .dark-text{
-        @apply text-[#013237];
+        @apply text-[#006400];
     }
     .normal-text{
-        @apply text-[#4CA771];
+        @apply text-[#284932];
+    }
+    .light-text{
+        @apply text-[#90EE90];
     }
     .dark-back{
-        @apply bg-[#013237];
+        @apply bg-[#0C0C0C];
     }
     .normal-back{
-        @apply bg-[#4CA771];
+        @apply bg-[#E0E1E2];
     }
     .light-back{
-        @apply bg-[#C0E6BA];
+        @apply bg-[#F8F9FA];
 
     }
     .extralight-back{
-        @apply bg-[#EAF9E7];
+        @apply bg-[#FBFCF8];
     }
 }
